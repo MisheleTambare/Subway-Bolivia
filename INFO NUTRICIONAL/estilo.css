@@ -1,0 +1,349 @@
+/* reset de la pagina */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #fff;
+}
+
+/* barra de navegacion */
+
+.header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 4px 5%;
+    width: 100%;
+    padding-left: 50px;
+    box-shadow: 0 0 60px 10px;
+    position: sticky;
+    top: 0;
+    font-size: 22px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.content {
+    background-color: #fff;
+    min-height: 8px;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.log{
+    width: auto;
+    height: 40px;
+    transition: all 0.3s;
+}
+
+.log:hover {
+    transform: scale(1.1);
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 22px;
+    padding: 20px;
+    color: #000;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: #028940;
+}
+
+#menuu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.btn button{
+    font-weight: 700;
+    color: #000;
+    padding: 9px 25px;
+    background: #028940;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+}
+
+.header .btn button:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:991px) {
+    .content {
+        min-width: 70px;
+    }
+
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+/* informacion nutricional */
+
+.principal{
+    margin: 50px;
+}
+h1{
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.nutricion{
+    margin-top: 50px;
+    display: flex;
+    margin-right: 30px;
+    margin-bottom: 70px;
+}
+
+.info{
+    margin-top: 50px;
+}
+
+.nutri{
+    margin-top: 50px;
+}
+
+.info p{
+    margin: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.nutri .title{
+    width: 600px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    border-color: #028940;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+}
+.calorias{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.calorias li{
+    margin: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+.reduc{
+    margin-top: 50px;
+}
+
+.reduc .title{
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    border-color: #028940;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+}
+
+.sal{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.sal li{
+    margin: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+.fibra{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.fibra .title{
+    width: 350px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    border-color: #028940;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+}
+
+.fibra li{
+    margin: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+.nutricion img{
+    width: 900PX;
+}
+
+/* pie de pagina */
+
+.footer{
+    position: relative;
+    width: 100%;
+    background-color: #028940;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-color: #000;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+}
+
+.footer .subs{
+    cursor: pointer;
+}
+
+.footer .subs img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.footer .subs img:hover{
+    transform: scale(1.15);
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 50px;
+    flex-wrap: wrap;
+}
+
+.icon-elem{
+    list-style: none;
+}
+
+.icon{
+    color: #fff;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.men{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-elem{
+    list-style: none;
+}
+
+.menu-icon{
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transform: 0.3s;
+}
+
+.menu-icon:hover{
+    opacity: 1;
+    color: #FFC20D;
+}
+.legal{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
