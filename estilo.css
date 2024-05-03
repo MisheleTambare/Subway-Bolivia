@@ -1,0 +1,166 @@
+ /* reset la página */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+}
+
+/* diseño del titulo */
+
+.titu {
+    border-color: none;
+    border-width: none;
+    border-style: none;
+    border-radius: none;
+    box-shadow: none;
+}
+
+.pag {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.pro {
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.pro span {
+    color: #028940;
+    font-weight: bold;
+}
+
+.equipo {
+    width: 550px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-color: #028940;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    
+}
+
+/* diseño del equipo de desarrollo */
+
+.row-cols-1 {
+    margin: 0 0;
+}
+
+.equi {
+    border-color: transparent;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px;
+}
+
+.nom {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cargo {
+    font-size: 18px;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -7%;
+    margin: 10px 30px;
+    flex-wrap: wrap;
+}
+
+.icon-elem{
+    list-style: none;
+}
+
+.icon{
+    color: #000000;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+/* diseño de los botones */
+
+.men{
+    margin: 150px 0;
+}
+
+.targ {
+    margin: auto;
+    border-color: none;
+    border-width: none;
+    border-style: none;
+    border-radius: none;
+    box-shadow: none;
+}
+
+.mb-3 {
+    width: 600px;
+}
+
+.col-sm-6 {
+    margin: auto;
+}
+
+.card-body {
+    margin: auto;
+}
+
+.tex p{
+    width: 650px;
+    height: 60px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    border-color: #028940;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.btn {
+    width: auto;
+    height: 70px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 20px 10px 25px;
+    background-color: #028940;
+    border-color: #028940;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #028940;
+}
+
+.log {
+    width: 100%;
+}
+
+.subs {
+    width: 500px;
+    position: absolute;
+    left: 25%;
+    top: -70%;
+    margin: -75px 0 0 -55px;
+}
